@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Dice </title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <h1> Refresh Me </h1>
-      <div class="sub-container">
-        <div class="dice">
-          <p class="player1"> Player1 </p>
-          <img class="img1" src="./images/dice6.png">
-          <button id="btn1" class="btn" type="button" onclick="rollDice1()"> Roll the Dice 🎲 </button>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+        <title> Dice Game </title>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Refresh Me </h1>
+            <div class="sub-container">
+                <div class="dice">
+                    <input type="text" id="player1" name="player1" value="" placeholder="Enter player1 name" class="players">
+                    <img class="img1" src="./images/dice6.png">
+                    <button id="btn1" class="btn" type="button"> Roll the Dice 🎲 </button>
+                </div>
+                <div class="dice">
+                    <input type="text" id="player2" name="player2" value="" placeholder="Enter player2 name" class="players"> 
+                    <img class="img2" src="./images/dice6.png">
+                    <button id="btn2" class="btn" type="button"> Roll the Dice 🎲 </button>
+                </div>
+            </div>
         </div>
-        <div class="dice">
-          <p class="player2"> Player 2 </p>
-          <img class="img2" src="./images/dice6.png">
-          <button id="btn2" class="btn" type="button" onclick="rollDice2()"> Roll the Dice 🎲 </button>
-        </div>
-      </div>
-    </div>
-  </body>
-  <footer>
-    fungame copyright@2025. All rights reserved. 
-  </footer>
-  <script src="./index.js"></script>
+    </body>
+    <footer>
+        fungame copyright@2025. All rights reserved. 
+    </footer>
+    <script src="./index.js"></script>
 </html>

@@ -1,128 +1,152 @@
 body {
-  margin: 0px;
-  background-color: #393E46;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+    margin: 0px;
+    background-color: #232931;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
-  letter-spacing: 10px;
-  text-align: center;
-  text-shadow: 5px 0 #232931;
-  font-size: 80px;
-  color: #4ECCA3;
-  margin: 0px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 5px 0 #232931;
+    font-size: 80px;
+    color: #4ECCA3;
+    margin: 0px;
 }
 
 .sub-container {
-  padding: 30px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  width: 80%;
-  height: auto;
-  gap: 30px;
+    padding: 30px 30px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    gap: 30px;
 }
 
 .dice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  box-sizing: border-box;
-  border: 1px solid white;
-  width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0px;
 }
 
 .dice img {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-p {
-  font-size: 50px;
-  color: #4ECCA3;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-family: 'Indie Flower', cursive;
+.players {
+    font-size: 20px;
+    background-color: #31363F;
+    color: #3D74B6;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 100px;
+    border: 2px solid #4ECCA3;
+    box-sizing: border-box;
+    caret-color: #3D74B6;
+}
+
+.players:hover {
+  border: 2px solid #6FE6FC;
+}
+
+.players:focus {
+  border: 4px solid #CB0404;
+  background-color: #EAC8A6;
 }
 
 .btn {
-  margin-top: 25px;
-  border: 1px solid white;
-  color: #0B1D51;
-  font-family: 'Indie Flower', cursive;
-  font-weight: bolder;
-  background-color: #4ECCA3;
-  font-size: 20px;
-  padding: 5px 20px;
-  border-radius: 50px;
-  letter-spacing: 2px;
+    margin-top: 25px;
+    border: 1px solid white;
+    color: #0B1D51;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    background-color: #4ECCA3;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 .btn:hover {
-  background-color: #6FE6FC; 
-  color: #0B1D51;
-  font-weight: bolder;
-  border-radius: 50px;
+    background-color: #6FE6FC; 
+    color: #0B1D51;
+    font-weight: bolder;
+    border-radius: 50px;
 }
 
 footer {
-  font-family: 'Indie Flower', cursive;
-  letter-spacing: 2px;
-  margin: 20px 0px;
-  box-sizing: border-box;
-  color: #EEEEEE;
-  text-align: center;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    color: #EEEEEE;
+    text-align: center;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .sub-container {
-    width: 100%;
-  }
-  .dice {
-    width: fit-content;
-  }
+    .sub-container {
+        width: 100%;
+    }
+    .dice {
+        width: fit-content;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .sub-container {
-    width: 100%;
-  }
-  .dice {
-    width: 50%;
-  }
+    .sub-container {
+        width: 100%;
+    }
+    .dice {
+        width: 50%;
+    }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
-  .sub-container {
-    padding: 20px;
-    width: 100%;
-    flex-direction: column;
-  }  
-  .dice{
-    width: 85%;
-  }
+    h1 {
+      margin-top: 50px;
+      font-size: 60px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .sub-container {
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+    }  
+    .dice{
+        width: 85%;
+    }
 }
