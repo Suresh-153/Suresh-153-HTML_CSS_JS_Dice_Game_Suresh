@@ -125,15 +125,25 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+    body {
+        height: auto;
+    }
     .sub-container {
-        width: 100%;
+        width: auto;
+        flex-wrap: wrap;
     }
     .dice {
-        width: 50%;
+        width: auto;
+    }
+    .players {
+        width: auto;
     }
 }
 
 @media (max-width: 480px) {
+    body{
+        height: auto;
+    }
     h1 {
       margin-top: 50px;
       font-size: 60px;
